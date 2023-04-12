@@ -4,6 +4,10 @@
     padding: 2vw 5.6vw;
     min-height: 50vw;
 
+    li {
+        list-style: none;
+    }
+
     &__list {
         margin-top: 44px;
         display: none;
