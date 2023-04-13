@@ -14,6 +14,10 @@
             display: grid;
         }
 
+        @media (max-width:768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
         &__item {
             img {
                 max-width: 100%;
@@ -25,6 +29,12 @@
     &__tabs {
         display: flex;
         justify-content: center;
+
+        @media (max-width: 768px) {
+            white-space: nowrap; // fazer com que as palavras fiquem numa linha só mesmo que não caiba no container
+            overflow-x: scroll; // fazer a rolagem
+            padding-left: 20px;
+        }
 
         &__button {
             color: variaveis.$corTextoSecundaria;
@@ -39,6 +49,10 @@
 
             &--is-active {
                 border-color: variaveis.$corTextoSecundaria;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
             }
         }
     }
